@@ -24,6 +24,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C5FB2C
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebForms_Routing", "WebForms\WebForms_Routing\WebForms_Routing.csproj", "{68269CC3-0584-407E-8C46-1931D6B3D8C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,12 +48,17 @@ Global
 		{D98F8238-A199-4CC9-B035-05DCCAE60F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D98F8238-A199-4CC9-B035-05DCCAE60F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D98F8238-A199-4CC9-B035-05DCCAE60F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68269CC3-0584-407E-8C46-1931D6B3D8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68269CC3-0584-407E-8C46-1931D6B3D8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68269CC3-0584-407E-8C46-1931D6B3D8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68269CC3-0584-407E-8C46-1931D6B3D8C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D98F8238-A199-4CC9-B035-05DCCAE60F04} = {B7E312C0-B413-4E7D-BFD8-8F0B10F9B4C3}
+		{68269CC3-0584-407E-8C46-1931D6B3D8C8} = {B7E312C0-B413-4E7D-BFD8-8F0B10F9B4C3}
 		{DC67CE53-E589-4407-BC08-CA0F1AAA328B} = {93F11721-FBDE-4CB7-A633-96A06A618F38}
 		{F97685B1-104F-44CC-AABF-D3BFCF4E171A} = {03458BBA-59A1-4A06-801E-88A2040F315D}
 	EndGlobalSection
