@@ -85,6 +85,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -168,6 +172,14 @@
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="App_Data\NORTHWND.LDF">
+      <DependentUpon>NORTHWND.MDF</DependentUpon>
+    </Content>
+    <Content Include="App_Data\NORTHWND.MDF" />
+    <Content Include="App_Data\PUBS.MDF" />
+    <Content Include="App_Data\PUBS_log.ldf">
+      <DependentUpon>PUBS.MDF</DependentUpon>
+    </Content>
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -238,6 +250,31 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="packages.config" />
+    <Content Include="DataAccess\Pubs.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Pubs.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataAccess\Pubs.dbml.layout">
+      <DependentUpon>Pubs.dbml</DependentUpon>
+    </None>
+    <EntityDeploy Include="DataAccess\Pubs.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Pubs1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DataAccess\Pubs.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Pubs.edmx</DependentUpon>
+      <LastGenOutput>Pubs.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataAccess\Pubs.edmx.diagram">
+      <DependentUpon>Pubs.edmx</DependentUpon>
+    </Content>
+    <Content Include="DataAccess\Pubs.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Pubs.edmx</DependentUpon>
+      <LastGenOutput>Pubs.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -275,6 +312,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx" />
     <Content Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -331,6 +369,26 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DataAccess\Pubs.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pubs.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Pubs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pubs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Pubs.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pubs.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Pubs1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pubs.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -349,6 +407,13 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx.cs">
+      <DependentUpon>PageMethods_ScriptManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx.designer.cs">
+      <DependentUpon>PageMethods_ScriptManager.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx.cs">
       <DependentUpon>UpdatePanel_Trigger_FromInside.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -356,9 +421,12 @@
     <Compile Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx.designer.cs">
       <DependentUpon>UpdatePanel_Trigger_FromInside.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\EmployeeModel.cs" />
+    <Compile Include="ViewModel\JobModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
