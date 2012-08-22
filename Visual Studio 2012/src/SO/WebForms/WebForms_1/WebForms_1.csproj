@@ -312,6 +312,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx" />
     <Content Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx" />
     <Content Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx" />
     <Content Include="Web.config" />
@@ -407,6 +408,13 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx.cs">
+      <DependentUpon>PageMethods_JQueryAJAX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx.designer.cs">
+      <DependentUpon>PageMethods_JQueryAJAX.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx.cs">
       <DependentUpon>PageMethods_ScriptManager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -440,6 +448,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
