@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PUBS" Class="PubsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\PUBS.MDF;Initial Catalog=PUBS;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="PUBSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.authors" Member="authors">
+    <Type Name="authors">
+      <Column Name="au_id" Type="System.String" DbType="VarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="au_lname" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="au_fname" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="phone" Type="System.String" DbType="Char(12) NOT NULL" CanBeNull="false" />
+      <Column Name="address" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="state" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="zip" Type="System.String" DbType="Char(5)" CanBeNull="true" />
+      <Column Name="contract" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="authors_titleauthor" Member="titleauthor" ThisKey="au_id" OtherKey="au_id" Type="titleauthor" />
+    </Type>
+  </Table>
+  <Table Name="dbo.titles" Member="titles">
+    <Type Name="titles">
+      <Column Name="title_id" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="type" Type="System.String" DbType="Char(12) NOT NULL" CanBeNull="false" />
+      <Column Name="pub_id" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="advance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="royalty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ytd_sales" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="notes" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="pubdate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="titles_roysched" Member="roysched" ThisKey="title_id" OtherKey="title_id" Type="roysched" />
+      <Association Name="titles_sales" Member="sales" ThisKey="title_id" OtherKey="title_id" Type="sales" />
+      <Association Name="titles_titleauthor" Member="titleauthor" ThisKey="title_id" OtherKey="title_id" Type="titleauthor" />
+      <Association Name="publishers_titles" Member="publishers" ThisKey="pub_id" OtherKey="pub_id" Type="publishers" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.discounts" Member="discounts">
+    <Type Name="discounts">
+      <Column Name="discounttype" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="stor_id" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="lowqty" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="highqty" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="discount" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
+      <Association Name="stores_discounts" Member="stores" ThisKey="stor_id" OtherKey="stor_id" Type="stores" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.employee" Member="employee">
+    <Type Name="employee">
+      <Column Name="emp_id" Type="System.String" DbType="Char(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="minit" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="lname" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="job_id" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="job_lvl" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="pub_id" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="hire_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="jobs_employee" Member="jobs" ThisKey="job_id" OtherKey="job_id" Type="jobs" IsForeignKey="true" />
+      <Association Name="publishers_employee" Member="publishers" ThisKey="pub_id" OtherKey="pub_id" Type="publishers" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.jobs" Member="jobs">
+    <Type Name="jobs">
+      <Column Name="job_id" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="job_desc" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="min_lvl" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="max_lvl" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="jobs_employee" Member="employee" ThisKey="job_id" OtherKey="job_id" Type="employee" />
+    </Type>
+  </Table>
+  <Table Name="dbo.pub_info" Member="pub_info">
+    <Type Name="pub_info">
+      <Column Name="pub_id" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="logo" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="pr_info" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="publishers_pub_info" Member="publishers" ThisKey="pub_id" OtherKey="pub_id" Type="publishers" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.publishers" Member="publishers">
+    <Type Name="publishers">
+      <Column Name="pub_id" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pub_name" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="state" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="country" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Association Name="publishers_titles" Member="titles" ThisKey="pub_id" OtherKey="pub_id" Type="titles" />
+      <Association Name="publishers_employee" Member="employee" ThisKey="pub_id" OtherKey="pub_id" Type="employee" />
+      <Association Name="publishers_pub_info" Member="pub_info" ThisKey="pub_id" OtherKey="pub_id" Type="pub_info" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.roysched" Member="roysched">
+    <Type Name="roysched">
+      <Column Name="title_id" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="lorange" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="hirange" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="royalty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="titles_roysched" Member="titles" ThisKey="title_id" OtherKey="title_id" Type="titles" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sales" Member="sales">
+    <Type Name="sales">
+      <Column Name="stor_id" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ord_num" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ord_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="qty" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="payterms" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="title_id" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="titles_sales" Member="titles" ThisKey="title_id" OtherKey="title_id" Type="titles" IsForeignKey="true" />
+      <Association Name="stores_sales" Member="stores" ThisKey="stor_id" OtherKey="stor_id" Type="stores" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stores" Member="stores">
+    <Type Name="stores">
+      <Column Name="stor_id" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="stor_name" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="stor_address" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="state" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="zip" Type="System.String" DbType="Char(5)" CanBeNull="true" />
+      <Association Name="stores_discounts" Member="discounts" ThisKey="stor_id" OtherKey="stor_id" Type="discounts" />
+      <Association Name="stores_sales" Member="sales" ThisKey="stor_id" OtherKey="stor_id" Type="sales" />
+    </Type>
+  </Table>
+  <Table Name="dbo.titleauthor" Member="titleauthor">
+    <Type Name="titleauthor">
+      <Column Name="au_id" Type="System.String" DbType="VarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="title_id" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="au_ord" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="royaltyper" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="authors_titleauthor" Member="authors" ThisKey="au_id" OtherKey="au_id" Type="authors" IsForeignKey="true" />
+      <Association Name="titles_titleauthor" Member="titles" ThisKey="title_id" OtherKey="title_id" Type="titles" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
