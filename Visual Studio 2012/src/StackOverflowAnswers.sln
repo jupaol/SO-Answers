@@ -16,6 +16,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CBB5E9
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebForms", "WebForms", "{6F0B7D3A-9665-4C47-BCEB-FFBE8A2811B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC3", "MVC3", "{774C0E00-AA47-477B-92A7-F9B216B60C91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC4", "MVC4", "{D39951E9-0622-4167-AEC0-6164B1E9DBFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication_PageRouting", "WebApplication_PageRouting\WebApplication_PageRouting.csproj", "{CC2A7A1B-A4A1-45F3-814B-DF2C537C82C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,8 +46,18 @@ Global
 		{3F1DB507-D2DC-4A63-BC61-757CC5223E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F1DB507-D2DC-4A63-BC61-757CC5223E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F1DB507-D2DC-4A63-BC61-757CC5223E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC2A7A1B-A4A1-45F3-814B-DF2C537C82C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC2A7A1B-A4A1-45F3-814B-DF2C537C82C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC2A7A1B-A4A1-45F3-814B-DF2C537C82C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC2A7A1B-A4A1-45F3-814B-DF2C537C82C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6EC313A-9BA9-4F50-BD4A-D70FE91CB938} = {6F0B7D3A-9665-4C47-BCEB-FFBE8A2811B1}
+		{CC2A7A1B-A4A1-45F3-814B-DF2C537C82C8} = {6F0B7D3A-9665-4C47-BCEB-FFBE8A2811B1}
+		{FCDDA9EB-7B32-4067-82D6-B676BC6EDED0} = {774C0E00-AA47-477B-92A7-F9B216B60C91}
+		{1DFB9D2E-75BB-47D2-B72A-59B5B8433917} = {D39951E9-0622-4167-AEC0-6164B1E9DBFE}
 	EndGlobalSection
 EndGlobal

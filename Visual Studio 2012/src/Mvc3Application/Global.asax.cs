@@ -24,6 +24,13 @@ namespace Mvc3Application
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "default_localization",
+                "{language}/{country}/{controller}/{action}/{id}",
+                new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+
+            );
+
+            routes.MapRoute(
                 "Default", // Nombre de ruta
                 "{controller}/{action}/{id}", // URL con parámetros
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Valores predeterminados de parámetro
