@@ -275,6 +275,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -347,6 +348,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx.cs">
+      <DependentUpon>UpdatePanel_Trigger_FromInside.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx.designer.cs">
+      <DependentUpon>UpdatePanel_Trigger_FromInside.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
