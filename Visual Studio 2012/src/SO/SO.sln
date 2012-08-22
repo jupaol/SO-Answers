@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebForms", "WebForms", "{B7E312C0-B413-4E7D-BFD8-8F0B10F9B4C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC2", "MVC2", "{283D5EA9-3F1B-4C5C-93A0-4B227CF5C6C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC3", "MVC3", "{93F11721-FBDE-4CB7-A633-96A06A618F38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC4", "MVC4", "{03458BBA-59A1-4A06-801E-88A2040F315D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalTests", "GlobalTests\GlobalTests.csproj", "{CE075638-B0E7-4566-B0D3-DE4733ED2923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC3_1", "MVC3\MVC3_1\MVC3_1.csproj", "{DC67CE53-E589-4407-BC08-CA0F1AAA328B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC4_1", "MVC4\MVC4_1\MVC4_1.csproj", "{F97685B1-104F-44CC-AABF-D3BFCF4E171A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebForms_1", "WebForms\WebForms_1\WebForms_1.csproj", "{D98F8238-A199-4CC9-B035-05DCCAE60F04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C5FB2C21-A343-4D05-A808-02E3CD129235}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE075638-B0E7-4566-B0D3-DE4733ED2923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE075638-B0E7-4566-B0D3-DE4733ED2923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE075638-B0E7-4566-B0D3-DE4733ED2923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE075638-B0E7-4566-B0D3-DE4733ED2923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC67CE53-E589-4407-BC08-CA0F1AAA328B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC67CE53-E589-4407-BC08-CA0F1AAA328B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC67CE53-E589-4407-BC08-CA0F1AAA328B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC67CE53-E589-4407-BC08-CA0F1AAA328B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F97685B1-104F-44CC-AABF-D3BFCF4E171A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F97685B1-104F-44CC-AABF-D3BFCF4E171A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F97685B1-104F-44CC-AABF-D3BFCF4E171A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F97685B1-104F-44CC-AABF-D3BFCF4E171A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D98F8238-A199-4CC9-B035-05DCCAE60F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98F8238-A199-4CC9-B035-05DCCAE60F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98F8238-A199-4CC9-B035-05DCCAE60F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98F8238-A199-4CC9-B035-05DCCAE60F04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D98F8238-A199-4CC9-B035-05DCCAE60F04} = {B7E312C0-B413-4E7D-BFD8-8F0B10F9B4C3}
+		{DC67CE53-E589-4407-BC08-CA0F1AAA328B} = {93F11721-FBDE-4CB7-A633-96A06A618F38}
+		{F97685B1-104F-44CC-AABF-D3BFCF4E171A} = {03458BBA-59A1-4A06-801E-88A2040F315D}
+	EndGlobalSection
+EndGlobal
