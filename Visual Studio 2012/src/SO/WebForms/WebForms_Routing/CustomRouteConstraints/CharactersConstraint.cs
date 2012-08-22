@@ -19,11 +19,14 @@ namespace WebForms_Routing.CustomRouteConstraints
 
             if (!values.ContainsKey(parameterName))
             {
+                //if the current constraint does not containe the parameter name we return false
+                //since there's nothing to validate
                 return false;
             }
 
             if (values[parameterName] == null)
             {
+                // since the parameter is optional we return true here
                 return true;
             }
 
