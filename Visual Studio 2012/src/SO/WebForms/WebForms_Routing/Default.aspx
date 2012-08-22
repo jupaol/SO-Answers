@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebForms_Routing.Default" %>
+﻿<%@ Page Trace="true" TraceMode="SortByTime" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebForms_Routing.Default" %>
 
 <!DOCTYPE html>
 

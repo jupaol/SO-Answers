@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
+using WebForms_Routing.CustomRouteConstraints;
 
 namespace WebForms_Routing
 {
@@ -71,7 +72,8 @@ namespace WebForms_Routing
                 "ExpenseReport/{locale}/{year}/{*extraInfo}",
                 "~/Expenses.aspx",
                 true,
-                new RouteValueDictionary { }
+                new RouteValueDictionary { },
+                new RouteValueDictionary { { "extraInfo", new CharactersConstraint() } }
             );
         }
     }
