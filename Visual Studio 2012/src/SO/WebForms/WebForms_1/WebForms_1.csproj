@@ -316,7 +316,14 @@
     <Content Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx" />
     <Content Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx" />
     <Content Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx" />
+    <Content Include="Topics\OutputCaching\File1.txt" />
+    <Content Include="Topics\OutputCaching\OutputCaching_FilesDependency.aspx" />
     <Content Include="Topics\OutputCaching\OutputCaching_PartialCaching_UserControls_Declarativly.aspx" />
+    <Content Include="Topics\OutputCaching\OutputCaching_UsingCodeAndMasterPage.aspx" />
+    <Content Include="Topics\OutputCaching\OutputCaching_VaryByBrowser.aspx" />
+    <Content Include="Topics\OutputCaching\OutputCaching_VaryByParamUsingCode.aspx" />
+    <Content Include="Topics\OutputCaching\OutputCaching_VaryingByParams.aspx" />
+    <Content Include="Topics\OutputCaching\OutputCaching_VaryingByParamWithMasterPage.aspx" />
     <Content Include="Topics\OutputCaching\PartialCaching_01.ascx" />
     <Content Include="Topics\OutputCaching\PartialCaching_02.ascx" />
     <Content Include="Topics\QueryExtenderControls\QueryExtender_LinqDataSource_General.aspx" />
@@ -441,12 +448,54 @@
     <Compile Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx.designer.cs">
       <DependentUpon>UpdatePanel_Trigger_FromInside.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_FilesDependency.aspx.cs">
+      <DependentUpon>OutputCaching_FilesDependency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_FilesDependency.aspx.designer.cs">
+      <DependentUpon>OutputCaching_FilesDependency.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Topics\OutputCaching\OutputCaching_PartialCaching_UserControls_Declarativly.aspx.cs">
       <DependentUpon>OutputCaching_PartialCaching_UserControls_Declarativly.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Topics\OutputCaching\OutputCaching_PartialCaching_UserControls_Declarativly.aspx.designer.cs">
       <DependentUpon>OutputCaching_PartialCaching_UserControls_Declarativly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_UsingCodeAndMasterPage.aspx.cs">
+      <DependentUpon>OutputCaching_UsingCodeAndMasterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_UsingCodeAndMasterPage.aspx.designer.cs">
+      <DependentUpon>OutputCaching_UsingCodeAndMasterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_VaryByBrowser.aspx.cs">
+      <DependentUpon>OutputCaching_VaryByBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_VaryByBrowser.aspx.designer.cs">
+      <DependentUpon>OutputCaching_VaryByBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_VaryByParamUsingCode.aspx.cs">
+      <DependentUpon>OutputCaching_VaryByParamUsingCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_VaryByParamUsingCode.aspx.designer.cs">
+      <DependentUpon>OutputCaching_VaryByParamUsingCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_VaryingByParams.aspx.cs">
+      <DependentUpon>OutputCaching_VaryingByParams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_VaryingByParams.aspx.designer.cs">
+      <DependentUpon>OutputCaching_VaryingByParams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_VaryingByParamWithMasterPage.aspx.cs">
+      <DependentUpon>OutputCaching_VaryingByParamWithMasterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_VaryingByParamWithMasterPage.aspx.designer.cs">
+      <DependentUpon>OutputCaching_VaryingByParamWithMasterPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\OutputCaching\PartialCaching_01.ascx.cs">
       <DependentUpon>PartialCaching_01.ascx</DependentUpon>
