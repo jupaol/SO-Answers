@@ -315,6 +315,7 @@
     <Content Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx" />
     <Content Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx" />
     <Content Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx" />
+    <Content Include="Topics\QueryExtenderControls\QueryExtender_LinqDataSource_General.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -428,6 +429,13 @@
     </Compile>
     <Compile Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx.designer.cs">
       <DependentUpon>UpdatePanel_Trigger_FromInside.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\QueryExtenderControls\QueryExtender_LinqDataSource_General.aspx.cs">
+      <DependentUpon>QueryExtender_LinqDataSource_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\QueryExtenderControls\QueryExtender_LinqDataSource_General.aspx.designer.cs">
+      <DependentUpon>QueryExtender_LinqDataSource_General.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\EmployeeModel.cs" />
     <Compile Include="ViewModel\JobModel.cs" />
