@@ -312,9 +312,13 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Topics\Caching\Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx" />
     <Content Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx" />
     <Content Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx" />
     <Content Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx" />
+    <Content Include="Topics\OutputCaching\OutputCaching_PartialCaching_UserControls_Declarativly.aspx" />
+    <Content Include="Topics\OutputCaching\PartialCaching_01.ascx" />
+    <Content Include="Topics\OutputCaching\PartialCaching_02.ascx" />
     <Content Include="Topics\QueryExtenderControls\QueryExtender_LinqDataSource_General.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -409,6 +413,13 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Topics\Caching\Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx.cs">
+      <DependentUpon>Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Caching\Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx.designer.cs">
+      <DependentUpon>Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx.cs">
       <DependentUpon>PageMethods_JQueryAJAX.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -429,6 +440,27 @@
     </Compile>
     <Compile Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx.designer.cs">
       <DependentUpon>UpdatePanel_Trigger_FromInside.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_PartialCaching_UserControls_Declarativly.aspx.cs">
+      <DependentUpon>OutputCaching_PartialCaching_UserControls_Declarativly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\OutputCaching_PartialCaching_UserControls_Declarativly.aspx.designer.cs">
+      <DependentUpon>OutputCaching_PartialCaching_UserControls_Declarativly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\PartialCaching_01.ascx.cs">
+      <DependentUpon>PartialCaching_01.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\PartialCaching_01.ascx.designer.cs">
+      <DependentUpon>PartialCaching_01.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\PartialCaching_02.ascx.cs">
+      <DependentUpon>PartialCaching_02.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\OutputCaching\PartialCaching_02.ascx.designer.cs">
+      <DependentUpon>PartialCaching_02.ascx</DependentUpon>
     </Compile>
     <Compile Include="Topics\QueryExtenderControls\QueryExtender_LinqDataSource_General.aspx.cs">
       <DependentUpon>QueryExtender_LinqDataSource_General.aspx</DependentUpon>
