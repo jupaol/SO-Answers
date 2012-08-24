@@ -172,14 +172,6 @@
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
-    <Content Include="App_Data\NORTHWND.LDF">
-      <DependentUpon>NORTHWND.MDF</DependentUpon>
-    </Content>
-    <Content Include="App_Data\NORTHWND.MDF" />
-    <Content Include="App_Data\PUBS.MDF" />
-    <Content Include="App_Data\PUBS_log.ldf">
-      <DependentUpon>PUBS.MDF</DependentUpon>
-    </Content>
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -250,14 +242,6 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="packages.config" />
-    <Content Include="DataAccess\Pubs.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Pubs.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </Content>
-    <None Include="DataAccess\Pubs.dbml.layout">
-      <DependentUpon>Pubs.dbml</DependentUpon>
-    </None>
     <EntityDeploy Include="DataAccess\Pubs.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Pubs1.Designer.cs</LastGenOutput>
@@ -275,6 +259,14 @@
       <DependentUpon>Pubs.edmx</DependentUpon>
       <LastGenOutput>Pubs.cs</LastGenOutput>
     </Content>
+    <Content Include="DataAccess\Pubs.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Pubs.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataAccess\Pubs.dbml.layout">
+      <DependentUpon>Pubs.dbml</DependentUpon>
+    </None>
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -537,7 +529,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
