@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DynamicDataLinq.CustomDataContext;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Web;
 using System.Web.DynamicData;
@@ -28,7 +29,7 @@ namespace DynamicDataLinq
             // [ScaffoldTable(true)] attribute to the partial class.
             // Note: Make sure that you change "YourDataContextType" to the name of the data context
             // class in your application.
-            //DefaultModel.RegisterContext(typeof(YourDataContextType), new ContextConfiguration() { ScaffoldAllTables = true });
+            DefaultModel.RegisterContext(typeof(PubsDataContext), new ContextConfiguration() { ScaffoldAllTables = true });
 
             // The following statement supports separate-page mode, where the List, Detail, Insert, and 
             // Update tasks are performed by using separate pages. To enable this mode, uncomment the following 

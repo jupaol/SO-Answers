@@ -228,6 +228,8 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="DynamicData\FieldTemplates\CustomJobDescription.ascx" />
+    <Content Include="DynamicData\FieldTemplates\CustomJobDescription_Edit.ascx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\heroAccent.png" />
@@ -305,6 +307,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Topics\Caching\Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx" />
+    <Content Include="Topics\DynamicData\CustomizeDataFieldApperanceInDataBoundControls.aspx" />
+    <Content Include="Topics\DynamicData\EnablingDynamicDataInANormalPage.aspx" />
     <Content Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx" />
     <Content Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx" />
     <Content Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx" />
@@ -374,6 +378,8 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CustomDataContextMetadata\JobsMetadata.cs" />
+    <Compile Include="DataAccess\jobs.cs" />
     <Compile Include="DataAccess\Pubs.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -401,6 +407,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DynamicData\FieldTemplates\CustomJobDescription.ascx.cs">
+      <DependentUpon>CustomJobDescription.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\CustomJobDescription.ascx.designer.cs">
+      <DependentUpon>CustomJobDescription.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\CustomJobDescription_Edit.ascx.cs">
+      <DependentUpon>CustomJobDescription_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\CustomJobDescription_Edit.ascx.designer.cs">
+      <DependentUpon>CustomJobDescription_Edit.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -418,6 +438,20 @@
     </Compile>
     <Compile Include="Topics\Caching\Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx.designer.cs">
       <DependentUpon>Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\DynamicData\CustomizeDataFieldApperanceInDataBoundControls.aspx.cs">
+      <DependentUpon>CustomizeDataFieldApperanceInDataBoundControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\DynamicData\CustomizeDataFieldApperanceInDataBoundControls.aspx.designer.cs">
+      <DependentUpon>CustomizeDataFieldApperanceInDataBoundControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\DynamicData\EnablingDynamicDataInANormalPage.aspx.cs">
+      <DependentUpon>EnablingDynamicDataInANormalPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\DynamicData\EnablingDynamicDataInANormalPage.aspx.designer.cs">
+      <DependentUpon>EnablingDynamicDataInANormalPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx.cs">
       <DependentUpon>PageMethods_JQueryAJAX.aspx</DependentUpon>
