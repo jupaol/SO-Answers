@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CountriesAndPeople>
+  <Country name="USA">
+    <Person name="Obama" age="15">
+      <Language name="English" />
+    </Person>
+    <Person name="Jon Smith" age="30">
+      <Language name="English" />
+      <Language name="Spanish" />
+      <Language name="Mandarin" />
+      <Language name="French" />
+    </Person>
+    <Person name="Juan" age="15">
+      <Language name="English" />
+      <Language name="Spanish" />
+    </Person>
+  </Country>
+  <Country name="Mexico">
+    <Person name="Carlos" age="20">
+      <Language name="Spanish" />
+    </Person>
+  </Country>
+  <Country name="China">
+    <Person name="Chaun Yong" age="17">
+      <Language name="Mandarin" />
+      <Language name="English" />
+    </Person>
+  </Country>
+  <Country name="France">
+    <Person name="Mondu" age="45">
+      <Language name="French" />
+      <Language name="Italian" />
+    </Person>
+  </Country>
+</CountriesAndPeople>

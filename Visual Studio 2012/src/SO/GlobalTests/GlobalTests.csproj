@@ -108,12 +108,27 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Data\DataRepositoryDummy.cs" />
+    <Compile Include="Model\Country.cs" />
+    <Compile Include="Model\Language.cs" />
+    <Compile Include="Model\Person.cs" />
+    <Compile Include="Model\Pet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Topics\LinqToObjects\GroupByTests.cs" />
+    <Compile Include="Topics\LinqToObjects\GroupJoinTests.cs" />
+    <Compile Include="Topics\LinqToObjects\SelectManyTests.cs" />
+    <Compile Include="Topics\LinqToXml\ReadingDataFromXmlFilesTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\People.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

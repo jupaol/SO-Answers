@@ -76,9 +76,25 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Content Include="DynamicData\CustomPages\jobs\List.aspx" />
+    <Content Include="DynamicData\EntityTemplates\jobs.ascx" />
     <Content Include="DynamicData\FieldTemplates\MyCustomFieldTemplate.ascx" />
     <Content Include="DynamicData\FieldTemplates\MyCustomFieldTemplate_Edit.ascx" />
     <Content Include="Global.asax" />
+    <Compile Include="DynamicData\CustomPages\jobs\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\jobs\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\EntityTemplates\jobs.ascx.cs">
+      <DependentUpon>jobs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\EntityTemplates\jobs.ascx.designer.cs">
+      <DependentUpon>jobs.ascx</DependentUpon>
+    </Compile>
     <Compile Include="DynamicData\FieldTemplates\MyCustomFieldTemplate.ascx.cs">
       <DependentUpon>MyCustomFieldTemplate.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -373,7 +389,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DynamicData\CustomPages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CustomDataContext\Pubs.dbml">

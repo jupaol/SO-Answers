@@ -228,6 +228,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="DynamicData\EntityTemplates\jobs.ascx" />
     <Content Include="DynamicData\FieldTemplates\CustomJobDescription.ascx" />
     <Content Include="DynamicData\FieldTemplates\CustomJobDescription_Edit.ascx" />
     <Content Include="Images\accent.png" />
@@ -406,6 +407,12 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\EntityTemplates\jobs.ascx.cs">
+      <DependentUpon>jobs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\EntityTemplates\jobs.ascx.designer.cs">
+      <DependentUpon>jobs.ascx</DependentUpon>
     </Compile>
     <Compile Include="DynamicData\FieldTemplates\CustomJobDescription.ascx.cs">
       <DependentUpon>CustomJobDescription.ascx</DependentUpon>
