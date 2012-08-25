@@ -410,6 +410,7 @@
     </Compile>
     <Compile Include="DynamicData\EntityTemplates\jobs.ascx.cs">
       <DependentUpon>jobs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DynamicData\EntityTemplates\jobs.ascx.designer.cs">
       <DependentUpon>jobs.ascx</DependentUpon>

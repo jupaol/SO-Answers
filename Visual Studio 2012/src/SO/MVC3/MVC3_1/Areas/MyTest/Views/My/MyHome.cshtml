@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "MyHome";
+}
+
+<h2>MyHome</h2>
+
+@Html.ActionLink("Link from the MyTest area to the root home controller using ActionLink", "Index", "Home", new { area = string.Empty }, null)
+<br />
+@Html.RouteLink("Link from the MyTest area to the root home controller using RouteLink", "Default", new { controller = "Home", action = "Index", area = string.Empty }, null)

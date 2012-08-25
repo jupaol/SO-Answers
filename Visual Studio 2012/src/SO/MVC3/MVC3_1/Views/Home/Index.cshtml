@@ -6,3 +6,7 @@
 <p>
     To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
 </p>
+
+@Html.ActionLink("Link to the MyTest area using ActionLink", "MyHome", "My", new { area = "MyTest" }, null)
+<br />
+@Html.RouteLink("Link to the MyTest area using RouteLink", "MyTest_default", new { controller = "My", action = "MyHome" }, null)

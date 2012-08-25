@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,7 +12,9 @@ namespace WebForms_1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            var languages = Request.UserLanguages;
+            var ci = new CultureInfo(languages[0]);
+            var en = ci.EnglishName;
         }
     }
 }
