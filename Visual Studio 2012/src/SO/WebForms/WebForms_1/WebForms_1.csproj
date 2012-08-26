@@ -309,6 +309,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Topics\Caching\Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx" />
+    <Content Include="Topics\ConfigSettings\TestingCustomConfigurationSettings.aspx" />
     <Content Include="Topics\DynamicData\CustomizeDataFieldApperanceInDataBoundControls.aspx" />
     <Content Include="Topics\DynamicData\EnablingDynamicDataInANormalPage.aspx" />
     <Content Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx" />
@@ -453,6 +454,16 @@
     </Compile>
     <Compile Include="Topics\Caching\Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx.designer.cs">
       <DependentUpon>Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\ConfigSettings\ColorElement.cs" />
+    <Compile Include="Topics\ConfigSettings\FontElement.cs" />
+    <Compile Include="Topics\ConfigSettings\SampleConfigurationSection.cs" />
+    <Compile Include="Topics\ConfigSettings\TestingCustomConfigurationSettings.aspx.cs">
+      <DependentUpon>TestingCustomConfigurationSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\ConfigSettings\TestingCustomConfigurationSettings.aspx.designer.cs">
+      <DependentUpon>TestingCustomConfigurationSettings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\DynamicData\CustomizeDataFieldApperanceInDataBoundControls.aspx.cs">
       <DependentUpon>CustomizeDataFieldApperanceInDataBoundControls.aspx</DependentUpon>
