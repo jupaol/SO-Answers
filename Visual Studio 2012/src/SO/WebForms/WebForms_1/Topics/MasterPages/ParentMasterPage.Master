@@ -1,0 +1,13 @@
+﻿<%@ Master MasterPageFile="~/Topics/MasterPages/NestedMasterPage.Master" Language="C#" AutoEventWireup="true" CodeBehind="ParentMasterPage.master.cs" Inherits="WebForms_1.Topics.MasterPages.ParentMasterPage" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="NestedPlaceHolder">
+    <table border="10" style="background-color:lightgray; width:100%">
+        <tr>
+            <td>
+                <asp:ContentPlaceHolder runat="server" ID="ParentPlaceHolder">
+                    this will be replaced
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+</asp:Content>

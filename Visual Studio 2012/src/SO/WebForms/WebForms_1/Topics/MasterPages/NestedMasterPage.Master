@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NestedMasterPage.master.cs" Inherits="WebForms_1.Topics.MasterPages.NestedMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+            <table border="1" style="background-color:aqua;width:100%">
+                <tr>
+                    <td style="width:150px"></td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="NestedPlaceHolder" runat="server">
+        
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>

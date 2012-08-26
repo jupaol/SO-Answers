@@ -72,7 +72,12 @@
     <div id="body">
         <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
         <section class="content-wrapper main-content clear-fix">
-            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" >
+                <asp:Label Text="omfggggggggggggggggg" runat="server" />
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder runat="server" ID="SeondaryContent">
+                <asp:Label ID="Label1" Text="omfggggggggggggggggg" runat="server" />
+            </asp:ContentPlaceHolder>
         </section>
     </div>
     <footer>
