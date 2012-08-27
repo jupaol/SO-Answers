@@ -310,6 +310,12 @@
     <Content Include="Global.asax" />
     <Content Include="Topics\Caching\Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx" />
     <Content Include="Topics\ConfigSettings\TestingCustomConfigurationSettings.aspx" />
+    <Content Include="Topics\DynamicControls\AddingDynamicControlsOnDemand.aspx" />
+    <Content Include="Topics\DynamicControls\AddingDynamicUserControl.aspx" />
+    <Content Include="Topics\DynamicControls\AddingDynamicUserControlsOnDemand.aspx" />
+    <Content Include="Topics\DynamicControls\AddingMultipleDynamicControls.aspx" />
+    <Content Include="Topics\DynamicControls\AddressControl.ascx" />
+    <Content Include="Topics\DynamicControls\SimpleDynamicControls.aspx" />
     <Content Include="Topics\DynamicData\CustomizeDataFieldApperanceInDataBoundControls.aspx" />
     <Content Include="Topics\DynamicData\EnablingDynamicDataInANormalPage.aspx" />
     <Content Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx" />
@@ -464,6 +470,48 @@
     </Compile>
     <Compile Include="Topics\ConfigSettings\TestingCustomConfigurationSettings.aspx.designer.cs">
       <DependentUpon>TestingCustomConfigurationSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\DynamicControls\AddingDynamicControlsOnDemand.aspx.cs">
+      <DependentUpon>AddingDynamicControlsOnDemand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\DynamicControls\AddingDynamicControlsOnDemand.aspx.designer.cs">
+      <DependentUpon>AddingDynamicControlsOnDemand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\DynamicControls\AddingDynamicUserControl.aspx.cs">
+      <DependentUpon>AddingDynamicUserControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\DynamicControls\AddingDynamicUserControl.aspx.designer.cs">
+      <DependentUpon>AddingDynamicUserControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\DynamicControls\AddingDynamicUserControlsOnDemand.aspx.cs">
+      <DependentUpon>AddingDynamicUserControlsOnDemand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\DynamicControls\AddingDynamicUserControlsOnDemand.aspx.designer.cs">
+      <DependentUpon>AddingDynamicUserControlsOnDemand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\DynamicControls\AddingMultipleDynamicControls.aspx.cs">
+      <DependentUpon>AddingMultipleDynamicControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\DynamicControls\AddingMultipleDynamicControls.aspx.designer.cs">
+      <DependentUpon>AddingMultipleDynamicControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\DynamicControls\AddressControl.ascx.cs">
+      <DependentUpon>AddressControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\DynamicControls\AddressControl.ascx.designer.cs">
+      <DependentUpon>AddressControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\DynamicControls\SimpleDynamicControls.aspx.cs">
+      <DependentUpon>SimpleDynamicControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\DynamicControls\SimpleDynamicControls.aspx.designer.cs">
+      <DependentUpon>SimpleDynamicControls.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\DynamicData\CustomizeDataFieldApperanceInDataBoundControls.aspx.cs">
       <DependentUpon>CustomizeDataFieldApperanceInDataBoundControls.aspx</DependentUpon>
