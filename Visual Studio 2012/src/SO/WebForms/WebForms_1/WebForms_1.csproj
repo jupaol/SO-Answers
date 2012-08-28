@@ -337,6 +337,9 @@
     <Content Include="Topics\Page_ViewState\CompressPageViewState.aspx" />
     <Content Include="Topics\Page_ViewState\EnablingViewStatePerControl.aspx" />
     <Content Include="Topics\QueryExtenderControls\QueryExtender_LinqDataSource_General.aspx" />
+    <Content Include="Topics\Security\Authentication\Anonymous\AnonymousPage.aspx" />
+    <Content Include="Topics\Security\Authentication\HtmlPage1.html" />
+    <Content Include="Topics\Security\Authentication\Secure\HtmlPage1.html" />
     <Content Include="Topics\ThemesAndStyling\OverridingThemesWithThemeAttribute.aspx" />
     <Content Include="Topics\ThemesAndStyling\OverridingThemeWithStyleSheetTheme.aspx" />
     <Content Include="Topics\ThemesAndStyling\SettingStyleSheetThemeProgrammatically.aspx" />
@@ -671,6 +674,13 @@
     </Compile>
     <Compile Include="Topics\QueryExtenderControls\QueryExtender_LinqDataSource_General.aspx.designer.cs">
       <DependentUpon>QueryExtender_LinqDataSource_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\Security\Authentication\Anonymous\AnonymousPage.aspx.cs">
+      <DependentUpon>AnonymousPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Security\Authentication\Anonymous\AnonymousPage.aspx.designer.cs">
+      <DependentUpon>AnonymousPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\ThemesAndStyling\OverridingThemesWithThemeAttribute.aspx.cs">
       <DependentUpon>OverridingThemesWithThemeAttribute.aspx</DependentUpon>
