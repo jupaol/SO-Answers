@@ -1,0 +1,10 @@
+﻿@model DateTime?
+
+@{
+    if(this.Model.HasValue)
+    {
+        var currentAge = DateTime.Now.Year - this.Model.Value.Year;
+        
+        @currentAge @:years old (from a custom template)
+    }
+}

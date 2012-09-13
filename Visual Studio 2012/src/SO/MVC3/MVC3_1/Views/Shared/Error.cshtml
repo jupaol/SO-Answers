@@ -7,3 +7,17 @@
 <h2>
     Sorry, an error occurred while processing your request.
 </h2>
+
+ @{
+     if(this.Model != null)
+     {
+         <p>
+             There was an <b>@this.Model.Exception.GetType().Name</b>
+             while rendering <b>@this.Model.ControllerName's @this.Model.ActionName</b>
+         </p>
+        <p>
+            Stack trace
+        </p>
+        <pre>@this.Model.Exception.StackTrace</pre>
+     }
+ }

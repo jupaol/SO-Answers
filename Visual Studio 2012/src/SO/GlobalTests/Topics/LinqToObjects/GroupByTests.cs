@@ -17,8 +17,10 @@ namespace GlobalTests.Topics.LinqToObjects
 
             var q = from c in co
                     group c by c.Age;
-
             q.Should().HaveCount(5);
+
+            var q1 = co.GroupBy(key => key.Age, result => result);
+            q1.Should().HaveCount(5);
         }
 
         [TestMethod]
@@ -27,8 +29,12 @@ namespace GlobalTests.Topics.LinqToObjects
             var co = new DataRepositoryDummy().GetCountries().SelectMany(x => x.People).SelectMany(x => x.LanguagesSpoken);
 
             var q = co.GroupBy(x => x, x => x, (key, languages) => new { Key = key, Languages = languages });
-
             q.Should().HaveCount(5);
+
+            var q1 = from c in co
+                     group c by c into grouped
+                     select new { Key = grouped.Key, Languages = grouped };
+            q1.Should().HaveCount(5);
         }
     }
 }

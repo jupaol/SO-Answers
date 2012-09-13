@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "ConcurrentRequests";
+}
+
+<h2>Concurrent Requests</h2>
+
+@{
+    if(false)
+    {
+        <script src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    }
+}
+
+<input type="button" id="callAsync" value="Call methods Async" />
+
+<div id="res"></div>
+
+<script type="text/javascript">
+    function makeCall(url, data) {
+        $.ajax({
+            type: "POST",
+            url: url,
+            contentType: "application/json; charset=utf-8;",
+            dataType: "json",
+            data: data,
+            async: true,
+            cache: false,
+            success: function (msg) {
+                $("#res").append("<br />" + msg.Message);
+            },
+            error: function (xhr) {
+                aler(xhr.statusText);
+            }
+        });
+    }
+
+    $(function () {
+        $("#callAsync").click(function () {
+            makeCall("@Url.Action("Operation1", "Topics")", "{}");
+            makeCall("@Url.Action("Operation2", "Topics")", "{}");
+            makeCall("@Url.Action("Operation3", "Topics")", "{}");
+        });
+    });
+</script>

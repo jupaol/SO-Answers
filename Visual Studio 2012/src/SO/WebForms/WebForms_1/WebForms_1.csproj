@@ -21,6 +21,7 @@
     <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -89,6 +90,7 @@
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -319,7 +321,15 @@
     <Content Include="Topics\DynamicControls\SimpleDynamicControls.aspx" />
     <Content Include="Topics\DynamicData\CustomizeDataFieldApperanceInDataBoundControls.aspx" />
     <Content Include="Topics\DynamicData\EnablingDynamicDataInANormalPage.aspx" />
-    <Content Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx" />
+    <Content Include="Topics\JQuery\Ajax\ConsumeAWebServiceUsingAjax.aspx" />
+    <Content Include="Topics\JQuery\Ajax\PageMethods_JQueryAJAX.aspx" />
+    <Content Include="Topics\JQuery\Ajax\TestWcfServiceFromAjax.aspx" />
+    <Content Include="Topics\JQuery\Ajax\TestWcfServiceFromAjax.svc" />
+    <Content Include="Topics\JQuery\Ajax\TestWebService.asmx" />
+    <Content Include="Topics\JQuery\Animations\RollOverMenus.aspx" />
+    <Content Include="Topics\JQuery\CloningDomElements.aspx" />
+    <Content Include="Topics\JQuery\Events\FiringCustomClientEvents.aspx" />
+    <Content Include="Topics\LifeCycle\ApplicationLifeCycle.aspx" />
     <Content Include="Topics\MasterPages\TestingNestedMasterPages.aspx" />
     <Content Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx" />
     <Content Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx" />
@@ -541,12 +551,62 @@
     <Compile Include="Topics\DynamicData\EnablingDynamicDataInANormalPage.aspx.designer.cs">
       <DependentUpon>EnablingDynamicDataInANormalPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx.cs">
+    <Compile Include="Topics\JQuery\Ajax\ConsumeAWebServiceUsingAjax.aspx.cs">
+      <DependentUpon>ConsumeAWebServiceUsingAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\JQuery\Ajax\ConsumeAWebServiceUsingAjax.aspx.designer.cs">
+      <DependentUpon>ConsumeAWebServiceUsingAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\JQuery\Ajax\ITestWcfServiceFromAjax.cs" />
+    <Compile Include="Topics\JQuery\Ajax\PageMethods_JQueryAJAX.aspx.cs">
       <DependentUpon>PageMethods_JQueryAJAX.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Topics\JQuery\PageMethods_JQueryAJAX.aspx.designer.cs">
+    <Compile Include="Topics\JQuery\Ajax\PageMethods_JQueryAJAX.aspx.designer.cs">
       <DependentUpon>PageMethods_JQueryAJAX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\JQuery\Ajax\TestWcfServiceFromAjax.aspx.cs">
+      <DependentUpon>TestWcfServiceFromAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\JQuery\Ajax\TestWcfServiceFromAjax.aspx.designer.cs">
+      <DependentUpon>TestWcfServiceFromAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\JQuery\Ajax\TestWcfServiceFromAjax.svc.cs">
+      <DependentUpon>TestWcfServiceFromAjax.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\JQuery\Ajax\TestWebService.asmx.cs">
+      <DependentUpon>TestWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Topics\JQuery\Animations\RollOverMenus.aspx.cs">
+      <DependentUpon>RollOverMenus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\JQuery\Animations\RollOverMenus.aspx.designer.cs">
+      <DependentUpon>RollOverMenus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\JQuery\CloningDomElements.aspx.cs">
+      <DependentUpon>CloningDomElements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\JQuery\CloningDomElements.aspx.designer.cs">
+      <DependentUpon>CloningDomElements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\JQuery\Events\FiringCustomClientEvents.aspx.cs">
+      <DependentUpon>FiringCustomClientEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\JQuery\Events\FiringCustomClientEvents.aspx.designer.cs">
+      <DependentUpon>FiringCustomClientEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\LifeCycle\ApplicationLifeCycle.aspx.cs">
+      <DependentUpon>ApplicationLifeCycle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\LifeCycle\ApplicationLifeCycle.aspx.designer.cs">
+      <DependentUpon>ApplicationLifeCycle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\MasterPages\NestedMasterPage.Master.cs">
       <DependentUpon>NestedMasterPage.Master</DependentUpon>

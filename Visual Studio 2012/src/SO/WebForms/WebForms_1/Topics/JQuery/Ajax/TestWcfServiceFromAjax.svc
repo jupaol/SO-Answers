@@ -1,0 +1,6 @@
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Debug="true" 
+    Service="WebForms_1.Topics.JQuery.TestWcfServiceFromAjax" 
+    CodeBehind="TestWcfServiceFromAjax.svc.cs"
+    Factory="System.ServiceModel.Activation.WebScriptServiceHostFactory" %>

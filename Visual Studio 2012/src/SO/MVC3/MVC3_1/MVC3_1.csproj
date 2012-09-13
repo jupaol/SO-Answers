@@ -136,11 +136,27 @@
   <ItemGroup>
     <Compile Include="Areas\MyTest\Controllers\MyController.cs" />
     <Compile Include="Areas\MyTest\MyTestAreaRegistration.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LegacyController.cs" />
+    <Compile Include="Controllers\MyAsyncController.cs" />
+    <Compile Include="Controllers\TopicsController.cs" />
+    <Compile Include="CustomMvcFeatures\ActionResults\RssActionResult.cs" />
+    <Compile Include="CustomMvcFeatures\Filters\AjaxAuthorizationAttribute.cs" />
+    <Compile Include="CustomMvcFeatures\Filters\OrAuthorization.cs" />
+    <Compile Include="ExtraControllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="CustomMvcFeatures\HttpHandlers\CustomHttpHandler.cs" />
+    <Compile Include="Models\CategoryModel.cs" />
+    <Compile Include="Models\NewsFeed.cs" />
+    <Compile Include="Models\PersonModelView.cs" />
+    <Compile Include="Models\UserInfoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CustomMvcFeatures\RouteConstraints\BrowserConstraint.cs" />
+    <Compile Include="CustomMvcFeatures\RouteHandlers\CustomRouteHandler.cs" />
+    <Compile Include="CustomMvcFeatures\Routes\LegacyRoute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -201,6 +217,7 @@
     <Content Include="Areas\MyTest\Views\Web.config" />
     <Content Include="Areas\MyTest\Views\My\MyHome.cshtml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -215,6 +232,7 @@
     <Content Include="Scripts\knockout.mapping-latest.debug.js" />
     <Content Include="Scripts\knockout.mapping-latest.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="StaticContent.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -241,12 +259,23 @@
     <Content Include="Views\Web.config" />
     <Content Include="packages.config" />
     <None Include="readme.txt" />
+    <Content Include="Views\Shared\DisplayTemplates\AgeDisplay.cshtml" />
+    <Content Include="Views\Home\Person.cshtml" />
+    <Content Include="Views\Home\MyAction.cshtml" />
+    <Content Include="Views\Account\Logon.cshtml" />
+    <Content Include="Views\Legacy\GetLegacyUrl.cshtml" />
+    <Content Include="Views\Account\Logon2.cshtml" />
+    <Content Include="Views\Home\CustomAuthorization.cshtml" />
+    <Content Include="Views\Home\CachedChildAction.cshtml" />
+    <Content Include="Views\Home\ParentNoCachedAction.cshtml" />
+    <Content Include="Views\Home\ConcurrentRequests.cshtml" />
+    <Content Include="Views\MyAsync\Index.cshtml" />
+    <Content Include="Views\Account\UserInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\MyTest\Models\" />
     <Folder Include="Areas\MyTest\Views\Shared\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

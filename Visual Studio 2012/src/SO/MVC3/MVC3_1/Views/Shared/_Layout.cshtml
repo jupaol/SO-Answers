@@ -18,6 +18,18 @@
                 <ul id="menu">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Person", "Person", "Home")</li>
+                    <li>@Html.ActionLink("Logon", "Logon", "Account", string.Empty, string.Empty, "here", null, null)</li>
+                    <li>@Html.ActionLink("Old URL", "GetLegacyUrl", "Legacy")</li>
+                    <li>@Html.ActionLink("Logon2", "Logon2", "Account", new { id = "plop" }, null)</li>
+                    <li>@Html.ActionLink("Feed News", "FeedNews", "Home")</li>
+                    <li>@Html.ActionLink("Custom authorization", "CustomAuthorization", "Home")</li>
+                    <li>@Html.ActionLink("Raise Error", "RaiseException", "Home")</li>
+                    <li>@Html.ActionLink("Partial cahcing", "ParentNoCachedAction", "Home")</li>
+                    <li>@Html.ActionLink("Concurrency", "ConcurrentRequests", "Home")</li>
+                    <li>@Html.ActionLink("Async controller", "Index", "MyAsync")</li>
+                    <li>@Html.ActionLink("Dropdown test 1", "UserInfo", "Account")</li>
+                    <li>@Html.ActionLink("Legacy URL", "1", "Old")</li>
                 </ul>
             </div>
         </div>

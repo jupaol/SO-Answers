@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "Logon2";
+}
+
+<h2>Logon2</h2>
+
+The id is: @this.Model, (the default value specified in the action is -5-) however the page was requested with: @this.ViewContext.RouteData.Values["id"]
+this is because the action was requested with an invalid int value therefore the default action parameter is used instead

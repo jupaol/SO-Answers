@@ -23,6 +23,8 @@ namespace GlobalTests.Topics.LinqToXml
         public void ReadingDataFromXmlFile()
         {
             var d = XDocument.Load(this.GetStream());
+
+            d.Should().NotBeNull();
         }
 
         [TestMethod]

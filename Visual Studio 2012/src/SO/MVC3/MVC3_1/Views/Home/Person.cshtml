@@ -1,0 +1,18 @@
+﻿@model MVC3_1.Models.PersonModelView
+
+@{
+    ViewBag.Title = "Person";
+}
+
+<h2>Person</h2>
+
+@Html.DisplayFor(x => x.Birtday)
+
+@using (Html.BeginForm())
+{
+    @Html.HttpMethodOverride(HttpVerbs.Delete)
+
+    @Html.EditorForModel()
+
+    <input type="submit" name="name" value="Send" />
+}

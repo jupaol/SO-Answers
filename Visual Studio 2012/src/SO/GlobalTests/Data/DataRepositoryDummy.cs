@@ -33,8 +33,8 @@ namespace GlobalTests.Data
                     })
                 }));
 
-            var jon = new Person { Name = "Jon" };
-            var jpol = new Person { Name = "JPOL" };
+            var jon = new Person { Name = "Jon"};
+            var jpol = new Person { Name = "JPOL", LanguagesSpoken = new[] { Language.English, Language.Spanish } };
             var paul = new Person { Name = "Paul" };
             var pepe = new Person { Name = "Pepe" };
 

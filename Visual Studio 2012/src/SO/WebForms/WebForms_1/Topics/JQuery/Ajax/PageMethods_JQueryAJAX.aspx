@@ -5,12 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <script src="../../Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../../../Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function () {
             $.ajax({
                 type: 'POST',
-                url: '<%: this.ResolveClientUrl("~/Topics/JQuery/PageMethods_JQueryAJAX.aspx/GetJobs") %>',
+                url: '<%: this.ResolveClientUrl("~/Topics/JQuery/Ajax/PageMethods_JQueryAJAX.aspx/GetJobs") %>',
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'json',
                 data: '{}',
@@ -31,7 +31,7 @@
 
                 $.ajax({
                     type: 'POST',
-                    url: '<%: this.ResolveClientUrl("~/Topics/JQuery/PageMethods_JQueryAJAX.aspx/GetEmployees") %>',
+                    url: '<%: this.ResolveClientUrl("~/Topics/JQuery/Ajax/PageMethods_JQueryAJAX.aspx/GetEmployees") %>',
                     contentType: 'application/json; charset=utf-8',
                     dataType: 'json',
                     data: '{"jobID" : ' + jobID +'}',

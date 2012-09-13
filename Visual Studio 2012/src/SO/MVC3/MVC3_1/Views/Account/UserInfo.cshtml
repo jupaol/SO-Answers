@@ -1,0 +1,40 @@
+﻿@model MVC3_1.Models.UserInfoModel
+
+@{
+    ViewBag.Title = "UserInfo";
+}
+
+<h2>UserInfo</h2>
+
+Using editor model:
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+}
+
+Using edtorfor
+
+@using (Html.BeginForm())
+{
+    @:Category: @Html.DropDownListFor(x => x.SelectedCategory, this.Model.Categories.Select(x => new SelectListItem { Text = x.Name, Value = x.CategoryID.ToString() }), "Select a category please", new { id = "ddl" })
+    <br />
+    @:First name @Html.EditorFor(x => x.FirstName)
+    @:Last name @Html.EditorFor(x => x.LastName)
+    <input type="submit" value="Just post" />
+}
+
+@{
+    if (false)
+    {
+        <script type="text/javascript" src="../../Scripts/jquery-1.7.1.min.js"></script>
+    }
+}
+
+<script type="text/javascript">
+    $(function () {
+        var $ddl = $("select[id$=ddl]");
+
+        $ddl.append($("<option />").val("4").text("Item 4")).append($("<option />").val("5").text("Item 5"));
+    });
+</script>

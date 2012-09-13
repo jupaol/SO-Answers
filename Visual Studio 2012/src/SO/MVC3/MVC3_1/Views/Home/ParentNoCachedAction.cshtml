@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "ParentNoCachedAction";
+}
+
+<h2>ParentNoCachedAction</h2>
+
+Parent non cached action @this.Model
+<br />
+Child cached action @Html.Action("CachedChildAction", "Home")
