@@ -310,6 +310,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Topics\Caching\CachingUsingTheSqlDataSource.aspx" />
     <Content Include="Topics\Caching\Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx" />
     <Content Include="Topics\ConfigSettings\TestingCustomConfigurationSettings.aspx" />
     <Content Include="Topics\ControlState\ControlStateTesting.aspx" />
@@ -470,6 +471,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\Caching\CachingUsingTheSqlDataSource.aspx.cs">
+      <DependentUpon>CachingUsingTheSqlDataSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Caching\CachingUsingTheSqlDataSource.aspx.designer.cs">
+      <DependentUpon>CachingUsingTheSqlDataSource.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\Caching\Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx.cs">
       <DependentUpon>Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx</DependentUpon>
