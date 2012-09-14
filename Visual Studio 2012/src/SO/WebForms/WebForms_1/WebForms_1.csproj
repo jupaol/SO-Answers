@@ -330,6 +330,7 @@
     <Content Include="Topics\JQuery\Animations\RollOverMenus.aspx" />
     <Content Include="Topics\JQuery\CloningDomElements.aspx" />
     <Content Include="Topics\JQuery\Events\FiringCustomClientEvents.aspx" />
+    <Content Include="Topics\JQuery\jQueryUI\ModalDialog.aspx" />
     <Content Include="Topics\JQuery\SortGridViewRows.aspx" />
     <Content Include="Topics\LifeCycle\ApplicationLifeCycle.aspx" />
     <Content Include="Topics\MasterPages\TestingNestedMasterPages.aspx" />
@@ -609,6 +610,13 @@
     </Compile>
     <Compile Include="Topics\JQuery\Events\FiringCustomClientEvents.aspx.designer.cs">
       <DependentUpon>FiringCustomClientEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\JQuery\jQueryUI\ModalDialog.aspx.cs">
+      <DependentUpon>ModalDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\JQuery\jQueryUI\ModalDialog.aspx.designer.cs">
+      <DependentUpon>ModalDialog.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\JQuery\SortGridViewRows.aspx.cs">
       <DependentUpon>SortGridViewRows.aspx</DependentUpon>
