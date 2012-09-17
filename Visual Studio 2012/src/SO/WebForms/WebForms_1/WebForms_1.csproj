@@ -357,6 +357,7 @@
     <Content Include="Topics\ThemesAndStyling\OverridingThemeWithStyleSheetTheme.aspx" />
     <Content Include="Topics\ThemesAndStyling\SettingStyleSheetThemeProgrammatically.aspx" />
     <Content Include="Topics\ThemesAndStyling\SettingThemeProgrammatically.aspx" />
+    <Content Include="Topics\Validation\SimpleUnobtrusiveValidation.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -793,6 +794,13 @@
     </Compile>
     <Compile Include="Topics\ThemesAndStyling\SettingThemeProgrammatically.aspx.designer.cs">
       <DependentUpon>SettingThemeProgrammatically.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\Validation\SimpleUnobtrusiveValidation.aspx.cs">
+      <DependentUpon>SimpleUnobtrusiveValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Validation\SimpleUnobtrusiveValidation.aspx.designer.cs">
+      <DependentUpon>SimpleUnobtrusiveValidation.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\EmployeeModel.cs" />
     <Compile Include="ViewModel\JobModel.cs" />
