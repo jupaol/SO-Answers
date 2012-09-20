@@ -48,6 +48,8 @@ namespace WebForms_1
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterOpenAuth();
 
+            RoutesConfig.RegisterRoutes(RouteTable.Routes);
+
             //MetaModel model = new MetaModel();
             //model.RegisterContext(typeof(PubsDataContext),
             //new ContextConfiguration() { ScaffoldAllTables = false });

@@ -285,6 +285,7 @@
     <Content Include="Scripts\knockout.mapping-latest.debug.js" />
     <Content Include="Scripts\knockout.mapping-latest.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\showdown.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -322,6 +323,10 @@
     <Content Include="Topics\DynamicControls\SimpleDynamicControls.aspx" />
     <Content Include="Topics\DynamicData\CustomizeDataFieldApperanceInDataBoundControls.aspx" />
     <Content Include="Topics\DynamicData\EnablingDynamicDataInANormalPage.aspx" />
+    <Content Include="Topics\General\SplittingRequestUrl.aspx" />
+    <Content Include="Topics\HttpHandlers\Blog\Comments.aspx" />
+    <Content Include="Topics\HttpHandlers\Blog\Default.aspx" />
+    <Content Include="Topics\HttpHandlers\Blog\Posts.aspx" />
     <Content Include="Topics\JQuery\Ajax\ConsumeAWebServiceUsingAjax.aspx" />
     <Content Include="Topics\JQuery\Ajax\PageMethods_JQueryAJAX.aspx" />
     <Content Include="Topics\JQuery\Ajax\TestWcfServiceFromAjax.aspx" />
@@ -333,6 +338,9 @@
     <Content Include="Topics\JQuery\jQueryUI\ModalDialog.aspx" />
     <Content Include="Topics\JQuery\SortGridViewRows.aspx" />
     <Content Include="Topics\LifeCycle\ApplicationLifeCycle.aspx" />
+    <Content Include="Topics\MarkDown\ConvertingMdToHtmlFromHiddenITextarea.aspx" />
+    <Content Include="Topics\MarkDown\ConvertingMdToHtmlFromPreTag.aspx" />
+    <Content Include="Topics\MarkDown\ConvertingMdToHtmlUsingJavaScript.aspx" />
     <Content Include="Topics\MasterPages\TestingNestedMasterPages.aspx" />
     <Content Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx" />
     <Content Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx" />
@@ -406,6 +414,7 @@
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Start\RoutesConfig.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -562,6 +571,36 @@
     <Compile Include="Topics\DynamicData\EnablingDynamicDataInANormalPage.aspx.designer.cs">
       <DependentUpon>EnablingDynamicDataInANormalPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Topics\General\SplittingRequestUrl.aspx.cs">
+      <DependentUpon>SplittingRequestUrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\General\SplittingRequestUrl.aspx.designer.cs">
+      <DependentUpon>SplittingRequestUrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\HttpHandlers\Blog\Comments.aspx.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\HttpHandlers\Blog\Comments.aspx.designer.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\HttpHandlers\Blog\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\HttpHandlers\Blog\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\HttpHandlers\Blog\Posts.aspx.cs">
+      <DependentUpon>Posts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\HttpHandlers\Blog\Posts.aspx.designer.cs">
+      <DependentUpon>Posts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\HttpHandlers\RedirectHandler.cs" />
+    <Compile Include="Topics\HttpHandlers\RedirectModule.cs" />
     <Compile Include="Topics\JQuery\Ajax\ConsumeAWebServiceUsingAjax.aspx.cs">
       <DependentUpon>ConsumeAWebServiceUsingAjax.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -632,6 +671,27 @@
     </Compile>
     <Compile Include="Topics\LifeCycle\ApplicationLifeCycle.aspx.designer.cs">
       <DependentUpon>ApplicationLifeCycle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\MarkDown\ConvertingMdToHtmlFromHiddenITextarea.aspx.cs">
+      <DependentUpon>ConvertingMdToHtmlFromHiddenITextarea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\MarkDown\ConvertingMdToHtmlFromHiddenITextarea.aspx.designer.cs">
+      <DependentUpon>ConvertingMdToHtmlFromHiddenITextarea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\MarkDown\ConvertingMdToHtmlFromPreTag.aspx.cs">
+      <DependentUpon>ConvertingMdToHtmlFromPreTag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\MarkDown\ConvertingMdToHtmlFromPreTag.aspx.designer.cs">
+      <DependentUpon>ConvertingMdToHtmlFromPreTag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\MarkDown\ConvertingMdToHtmlUsingJavaScript.aspx.cs">
+      <DependentUpon>ConvertingMdToHtmlUsingJavaScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\MarkDown\ConvertingMdToHtmlUsingJavaScript.aspx.designer.cs">
+      <DependentUpon>ConvertingMdToHtmlUsingJavaScript.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\MasterPages\NestedMasterPage.Master.cs">
       <DependentUpon>NestedMasterPage.Master</DependentUpon>
@@ -825,6 +885,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Topics\UrlRewritting\" />
+    <Folder Include="Topics\UrlRouting\Constraints\" />
+    <Folder Include="Topics\UrlRouting\RouteHandlers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
