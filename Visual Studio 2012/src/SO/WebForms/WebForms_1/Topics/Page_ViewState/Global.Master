@@ -1,0 +1,33 @@
+﻿<%@ Master 
+    ViewStateMode="Disabled"
+    Language="C#" AutoEventWireup="true" CodeBehind="Global.master.cs" Inherits="WebForms_1.Topics.Page_ViewState.Global" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h1>
+            In global masterpage
+        </h1>
+        <h2>
+            Viestate disabled
+        </h2>
+        <div>
+            
+            <asp:DropDownList runat="server" AutoPostBack="true" ID="ddl">
+            </asp:DropDownList>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" ViewStateMode="Enabled">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -357,6 +357,7 @@
     <Content Include="Topics\OutputCaching\PartialCaching_02.ascx" />
     <Content Include="Topics\PageEncoding\DisplayingAvailablePageEncodings.aspx" />
     <Content Include="Topics\Page_ViewState\CompressPageViewState.aspx" />
+    <Content Include="Topics\Page_ViewState\Content.aspx" />
     <Content Include="Topics\Page_ViewState\EnablingViewStatePerControl.aspx" />
     <Content Include="Topics\QueryExtenderControls\QueryExtender_LinqDataSource_General.aspx" />
     <Content Include="Topics\Security\Authentication\Anonymous\AnonymousPage.aspx" />
@@ -814,12 +815,33 @@
     <Compile Include="Topics\Page_ViewState\CompressPageViewState.aspx.designer.cs">
       <DependentUpon>CompressPageViewState.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Topics\Page_ViewState\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Page_ViewState\Content.aspx.designer.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Topics\Page_ViewState\EnablingViewStatePerControl.aspx.cs">
       <DependentUpon>EnablingViewStatePerControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Topics\Page_ViewState\EnablingViewStatePerControl.aspx.designer.cs">
       <DependentUpon>EnablingViewStatePerControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\Page_ViewState\Global.Master.cs">
+      <DependentUpon>Global.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Page_ViewState\Global.Master.designer.cs">
+      <DependentUpon>Global.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\Page_ViewState\Nested.Master.cs">
+      <DependentUpon>Nested.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Page_ViewState\Nested.Master.designer.cs">
+      <DependentUpon>Nested.Master</DependentUpon>
     </Compile>
     <Compile Include="Topics\QueryExtenderControls\QueryExtender_LinqDataSource_General.aspx.cs">
       <DependentUpon>QueryExtender_LinqDataSource_General.aspx</DependentUpon>
@@ -884,6 +906,8 @@
   <ItemGroup>
     <Content Include="Topics\MasterPages\ParentMasterPage.Master" />
     <Content Include="Topics\MasterPages\NestedMasterPage.Master" />
+    <Content Include="Topics\Page_ViewState\Global.Master" />
+    <Content Include="Topics\Page_ViewState\Nested.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

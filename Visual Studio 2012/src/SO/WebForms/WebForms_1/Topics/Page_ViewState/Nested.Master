@@ -1,0 +1,16 @@
+﻿<%@ Master MasterPageFile="~/Topics/Page_ViewState/Global.Master" 
+    Language="C#" AutoEventWireup="true" CodeBehind="Nested.master.cs" Inherits="WebForms_1.Topics.Page_ViewState.Nested" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
+    <h1>
+        In nested master page
+    </h1>
+    <h2>
+        Viewstate enabled
+    </h2>
+    <asp:DropDownList runat="server" AutoPostBack="true" ID="ddl">
+    </asp:DropDownList>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</asp:Content>
