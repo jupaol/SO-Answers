@@ -284,6 +284,8 @@
     <Content Include="Scripts\knockout.js" />
     <Content Include="Scripts\knockout.mapping-latest.debug.js" />
     <Content Include="Scripts\knockout.mapping-latest.js" />
+    <Content Include="Scripts\LocalizedScripts\CheckAnswer.js" />
+    <Content Include="Scripts\LocalizedScripts\CheckAnswer.it-IT.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\showdown.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
@@ -324,6 +326,11 @@
     <Content Include="Topics\DynamicData\CustomizeDataFieldApperanceInDataBoundControls.aspx" />
     <Content Include="Topics\DynamicData\EnablingDynamicDataInANormalPage.aspx" />
     <Content Include="Topics\General\SplittingRequestUrl.aspx" />
+    <Content Include="Topics\Globalization\ConsumingJavaScriptFromAnEmbeddedAssembly.aspx" />
+    <Content Include="Topics\Globalization\ConsumingSatelliteAssemblyResources.aspx" />
+    <Content Include="Topics\Globalization\DateGlobalizationJavaScript.aspx" />
+    <Content Include="Topics\Globalization\DateGlobalizationScriptOverridingCulture.aspx" />
+    <Content Include="Topics\Globalization\LocalizingStaticJavaScriptFiles.aspx" />
     <Content Include="Topics\HttpHandlers\Blog\Comments.aspx" />
     <Content Include="Topics\HttpHandlers\Blog\Default.aspx" />
     <Content Include="Topics\HttpHandlers\Blog\Posts.aspx" />
@@ -579,6 +586,41 @@
     </Compile>
     <Compile Include="Topics\General\SplittingRequestUrl.aspx.designer.cs">
       <DependentUpon>SplittingRequestUrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\Globalization\ConsumingJavaScriptFromAnEmbeddedAssembly.aspx.cs">
+      <DependentUpon>ConsumingJavaScriptFromAnEmbeddedAssembly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Globalization\ConsumingJavaScriptFromAnEmbeddedAssembly.aspx.designer.cs">
+      <DependentUpon>ConsumingJavaScriptFromAnEmbeddedAssembly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\Globalization\ConsumingSatelliteAssemblyResources.aspx.cs">
+      <DependentUpon>ConsumingSatelliteAssemblyResources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Globalization\ConsumingSatelliteAssemblyResources.aspx.designer.cs">
+      <DependentUpon>ConsumingSatelliteAssemblyResources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\Globalization\DateGlobalizationJavaScript.aspx.cs">
+      <DependentUpon>DateGlobalizationJavaScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Globalization\DateGlobalizationJavaScript.aspx.designer.cs">
+      <DependentUpon>DateGlobalizationJavaScript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\Globalization\DateGlobalizationScriptOverridingCulture.aspx.cs">
+      <DependentUpon>DateGlobalizationScriptOverridingCulture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Globalization\DateGlobalizationScriptOverridingCulture.aspx.designer.cs">
+      <DependentUpon>DateGlobalizationScriptOverridingCulture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\Globalization\LocalizingStaticJavaScriptFiles.aspx.cs">
+      <DependentUpon>LocalizingStaticJavaScriptFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Globalization\LocalizingStaticJavaScriptFiles.aspx.designer.cs">
+      <DependentUpon>LocalizingStaticJavaScriptFiles.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\HttpHandlers\Blog\Comments.aspx.cs">
       <DependentUpon>Comments.aspx</DependentUpon>
@@ -920,6 +962,12 @@
     <Folder Include="Topics\UrlRewritting\" />
     <Folder Include="Topics\UrlRouting\Constraints\" />
     <Folder Include="Topics\UrlRouting\RouteHandlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleControl\SampleControl.csproj">
+      <Project>{cf17bb72-e359-4944-9412-7df2570cde5f}</Project>
+      <Name>SampleControl</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
