@@ -331,6 +331,7 @@
     <Content Include="Topics\Globalization\DateGlobalizationJavaScript.aspx" />
     <Content Include="Topics\Globalization\DateGlobalizationScriptOverridingCulture.aspx" />
     <Content Include="Topics\Globalization\LocalizingStaticJavaScriptFiles.aspx" />
+    <Content Include="Topics\Globalization\ReadingResourcesFromSatelliteAssemblies.aspx" />
     <Content Include="Topics\HttpHandlers\Blog\Comments.aspx" />
     <Content Include="Topics\HttpHandlers\Blog\Default.aspx" />
     <Content Include="Topics\HttpHandlers\Blog\Posts.aspx" />
@@ -621,6 +622,13 @@
     </Compile>
     <Compile Include="Topics\Globalization\LocalizingStaticJavaScriptFiles.aspx.designer.cs">
       <DependentUpon>LocalizingStaticJavaScriptFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\Globalization\ReadingResourcesFromSatelliteAssemblies.aspx.cs">
+      <DependentUpon>ReadingResourcesFromSatelliteAssemblies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Globalization\ReadingResourcesFromSatelliteAssemblies.aspx.designer.cs">
+      <DependentUpon>ReadingResourcesFromSatelliteAssemblies.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\HttpHandlers\Blog\Comments.aspx.cs">
       <DependentUpon>Comments.aspx</DependentUpon>
