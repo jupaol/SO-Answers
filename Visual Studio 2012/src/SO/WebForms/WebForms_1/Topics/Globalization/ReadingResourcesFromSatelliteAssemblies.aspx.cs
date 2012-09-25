@@ -13,15 +13,17 @@ namespace WebForms_1.Topics.Globalization
     {
         protected override void InitializeCulture()
         {
-            this.Culture = "it-IT";
-            this.UICulture = "it-IT";
+            this.Culture = "es-MX";
+            this.UICulture = "es";
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            var rm = new ResourceManager("SampleControl.VerificationResources", typeof(ClientVerification).Assembly);
+            //var rm = new ResourceManager("SampleControl.VerificationResources", typeof(ClientVerification).Assembly);
 
-            this.msg.Text = rm.GetString("Correct");
+            //this.msg.Text = rm.GetString("Correct");
+
+            this.msg.Text = VerificationResources.Correct;
         }
     }
 }

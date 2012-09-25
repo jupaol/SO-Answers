@@ -61,7 +61,7 @@
     <EmbeddedResource Include="UpdatePanelAnimation.js" />
     <EmbeddedResource Include="VerificationResources.it.resx" />
     <EmbeddedResource Include="VerificationResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>VerificationResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
