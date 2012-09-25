@@ -351,6 +351,7 @@
     <Content Include="Topics\MarkDown\ConvertingMdToHtmlUsingJavaScript.aspx" />
     <Content Include="Topics\MasterPages\TestingNestedMasterPages.aspx" />
     <Content Include="Topics\Membership\FindControlInLoginVieq.aspx" />
+    <Content Include="Topics\Membership\ScriptServices\LoginUsingScriptServices.aspx" />
     <Content Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx" />
     <Content Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx" />
     <Content Include="Topics\OutputCaching\File1.txt" />
@@ -772,6 +773,13 @@
     </Compile>
     <Compile Include="Topics\Membership\FindControlInLoginVieq.aspx.designer.cs">
       <DependentUpon>FindControlInLoginVieq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\Membership\ScriptServices\LoginUsingScriptServices.aspx.cs">
+      <DependentUpon>LoginUsingScriptServices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\Membership\ScriptServices\LoginUsingScriptServices.aspx.designer.cs">
+      <DependentUpon>LoginUsingScriptServices.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx.cs">
       <DependentUpon>PageMethods_ScriptManager.aspx</DependentUpon>

@@ -7,6 +7,9 @@
     </hgroup>
     <section id="loginForm">
         <h2>Use a local account to log in.</h2>
+        <asp:BulletedList runat="server">
+            <asp:ListItem Text="User: user, Password: password!" />
+        </asp:BulletedList>
         <asp:Login runat="server" ViewStateMode="Disabled" RenderOuterTable="false">
             <LayoutTemplate>
                 <p class="validation-summary-errors">
