@@ -353,6 +353,7 @@
     <Content Include="Topics\Membership\FindControlInLoginVieq.aspx" />
     <Content Include="Topics\Membership\ScriptServices\LoginUsingScriptServices.aspx" />
     <Content Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx" />
+    <Content Include="Topics\MicrosoftAJAX\PartialPostsDisableMenu.aspx" />
     <Content Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx" />
     <Content Include="Topics\OutputCaching\File1.txt" />
     <Content Include="Topics\OutputCaching\OutputCaching_FilesDependency.aspx" />
@@ -379,6 +380,7 @@
     <Content Include="Topics\Validation\SimpleUnobtrusiveValidation.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -787,6 +789,13 @@
     </Compile>
     <Compile Include="Topics\MicrosoftAJAX\PageMethods_ScriptManager.aspx.designer.cs">
       <DependentUpon>PageMethods_ScriptManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\MicrosoftAJAX\PartialPostsDisableMenu.aspx.cs">
+      <DependentUpon>PartialPostsDisableMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\MicrosoftAJAX\PartialPostsDisableMenu.aspx.designer.cs">
+      <DependentUpon>PartialPostsDisableMenu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\MicrosoftAJAX\UpdatePanel_Trigger_FromInside.aspx.cs">
       <DependentUpon>UpdatePanel_Trigger_FromInside.aspx</DependentUpon>

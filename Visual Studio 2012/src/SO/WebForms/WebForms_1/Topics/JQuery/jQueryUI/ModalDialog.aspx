@@ -45,9 +45,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:Button Text="Submit" runat="server" ID="foo" OnClick="foo_Click" />
-    </div>
+        <div>
+            <asp:Button Text="Submit" runat="server" ID="foo" OnClick="foo_Click" />
+        </div>
         <div>
             <asp:Label runat="server" ID="msg"></asp:Label>
         </div>
