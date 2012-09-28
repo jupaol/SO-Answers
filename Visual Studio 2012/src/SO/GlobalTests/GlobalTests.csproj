@@ -111,10 +111,12 @@
     <Compile Include="Data\DataRepositoryDummy.cs" />
     <Compile Include="Model\Country.cs" />
     <Compile Include="Model\Language.cs" />
+    <Compile Include="Model\LinkedListCustomItem.cs" />
     <Compile Include="Model\Person.cs" />
     <Compile Include="Model\Pet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Topics\JsonSerialization\SerializingListsTests.cs" />
+    <Compile Include="Topics\LinkedLists\TestingCycledLinkedLists.cs" />
     <Compile Include="Topics\LinqToObjects\FilterACollectionExcludingTheValuesFromAnotherCollectionTests.cs" />
     <Compile Include="Topics\LinqToObjects\GroupByTests.cs" />
     <Compile Include="Topics\LinqToObjects\GroupJoinTests.cs" />
