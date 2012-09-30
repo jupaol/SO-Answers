@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDomainUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
+  <DomainUser ID="10">
+    <FirstName>firstname</FirstName>
+    <LastName>lastname</LastName>
+    <MyEmail>email@email.com</MyEmail>
+  </DomainUser>
+  <DomainUser ID="102">
+    <FirstName>firstname2</FirstName>
+    <LastName>lastname2</LastName>
+    <MyEmail>email@email.com2</MyEmail>
+  </DomainUser>
+</ArrayOfDomainUser>

@@ -345,6 +345,9 @@
     <Content Include="Topics\JQuery\Events\FiringCustomClientEvents.aspx" />
     <Content Include="Topics\JQuery\jQueryUI\ModalDialog.aspx" />
     <Content Include="Topics\JQuery\SortGridViewRows.aspx" />
+    <Content Include="Topics\JQuery\XmlManipulation\CustomXml.xml" />
+    <Content Include="Topics\JQuery\XmlManipulation\CustomXmlService.asmx" />
+    <Content Include="Topics\JQuery\XmlManipulation\ManipulatingXmlWithJQuery.aspx" />
     <Content Include="Topics\LifeCycle\ApplicationLifeCycle.aspx" />
     <Content Include="Topics\MarkDown\ConvertingMdToHtmlFromHiddenITextarea.aspx" />
     <Content Include="Topics\MarkDown\ConvertingMdToHtmlFromPreTag.aspx" />
@@ -719,6 +722,17 @@
     </Compile>
     <Compile Include="Topics\JQuery\SortGridViewRows.aspx.designer.cs">
       <DependentUpon>SortGridViewRows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\JQuery\XmlManipulation\CustomXmlService.asmx.cs">
+      <DependentUpon>CustomXmlService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Topics\JQuery\XmlManipulation\ManipulatingXmlWithJQuery.aspx.cs">
+      <DependentUpon>ManipulatingXmlWithJQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\JQuery\XmlManipulation\ManipulatingXmlWithJQuery.aspx.designer.cs">
+      <DependentUpon>ManipulatingXmlWithJQuery.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\LifeCycle\ApplicationLifeCycle.aspx.cs">
       <DependentUpon>ApplicationLifeCycle.aspx</DependentUpon>
