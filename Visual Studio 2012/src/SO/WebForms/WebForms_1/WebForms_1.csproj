@@ -317,7 +317,8 @@
     <Content Include="Topics\Caching\Caching_SettingAnAbsoluteAndSlidingExpirationPolicy.aspx" />
     <Content Include="Topics\ConfigSettings\TestingCustomConfigurationSettings.aspx" />
     <Content Include="Topics\ControlState\ControlStateTesting.aspx" />
-    <Content Include="Topics\DataBinding\FormViewPagerBug.aspx" />
+    <Content Include="Topics\DataBinding\ForDropDownList\LinkingTwoDropDownLists.aspx" />
+    <Content Include="Topics\DataBinding\ForFormView\FormViewPagerBug.aspx" />
     <Content Include="Topics\DynamicControls\AddingDynamicControlsOnDemand.aspx" />
     <Content Include="Topics\DynamicControls\AddingDynamicUserControl.aspx" />
     <Content Include="Topics\DynamicControls\AddingDynamicUserControlsOnDemand.aspx" />
@@ -532,11 +533,18 @@
     <Compile Include="Topics\ControlState\ControlStateTesting.aspx.designer.cs">
       <DependentUpon>ControlStateTesting.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Topics\DataBinding\FormViewPagerBug.aspx.cs">
+    <Compile Include="Topics\DataBinding\ForDropDownList\LinkingTwoDropDownLists.aspx.cs">
+      <DependentUpon>LinkingTwoDropDownLists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\DataBinding\ForDropDownList\LinkingTwoDropDownLists.aspx.designer.cs">
+      <DependentUpon>LinkingTwoDropDownLists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\DataBinding\ForFormView\FormViewPagerBug.aspx.cs">
       <DependentUpon>FormViewPagerBug.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Topics\DataBinding\FormViewPagerBug.aspx.designer.cs">
+    <Compile Include="Topics\DataBinding\ForFormView\FormViewPagerBug.aspx.designer.cs">
       <DependentUpon>FormViewPagerBug.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\DynamicControls\AddingDynamicControlsOnDemand.aspx.cs">
