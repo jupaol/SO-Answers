@@ -15,7 +15,7 @@
         <asp:ScriptManager runat="server" ID="sm" />
         <asp:UpdateProgress runat="server" AssociatedUpdatePanelID="updatePanel" DisplayAfter="0" DynamicLayout="true">
             <ProgressTemplate>
-                Working...
+                Loading...
             </ProgressTemplate>
         </asp:UpdateProgress>
         <asp:UpdatePanel runat="server" ID="updatePanel">

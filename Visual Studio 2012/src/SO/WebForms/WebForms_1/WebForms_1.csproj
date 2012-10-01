@@ -347,6 +347,7 @@
     <Content Include="Topics\JQuery\Events\FiringCustomClientEvents.aspx" />
     <Content Include="Topics\JQuery\jQueryUI\ModalDialog.aspx" />
     <Content Include="Topics\JQuery\SortGridViewRows.aspx" />
+    <Content Include="Topics\JQuery\SynchronyzingTwoRadioButtonLists.aspx" />
     <Content Include="Topics\JQuery\XmlManipulation\CustomXml.xml" />
     <Content Include="Topics\JQuery\XmlManipulation\CustomXmlService.asmx" />
     <Content Include="Topics\JQuery\XmlManipulation\ManipulatingXmlWithJQuery.aspx" />
@@ -738,6 +739,13 @@
     </Compile>
     <Compile Include="Topics\JQuery\SortGridViewRows.aspx.designer.cs">
       <DependentUpon>SortGridViewRows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\JQuery\SynchronyzingTwoRadioButtonLists.aspx.cs">
+      <DependentUpon>SynchronyzingTwoRadioButtonLists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\JQuery\SynchronyzingTwoRadioButtonLists.aspx.designer.cs">
+      <DependentUpon>SynchronyzingTwoRadioButtonLists.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\JQuery\XmlManipulation\CustomXmlService.asmx.cs">
       <DependentUpon>CustomXmlService.asmx</DependentUpon>
