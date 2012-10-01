@@ -34,9 +34,11 @@ namespace GlobalTests.Topics.CustomEvents
 
             Thread.Sleep(2000);
 
+            var tmp = this.MyEvent;
+
             if (!string.IsNullOrEmpty(data))
             {
-                this.MyEvent(this, new EventArgs<string>(data + " at: " + DateTime.Now.ToString()));
+                tmp(this, new EventArgs<string>(data + " at: " + DateTime.Now.ToString()));
             }
         }
     }
