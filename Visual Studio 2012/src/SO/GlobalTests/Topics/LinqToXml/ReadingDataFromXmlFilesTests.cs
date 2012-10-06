@@ -54,5 +54,21 @@ namespace GlobalTests.Topics.LinqToXml
             q = q.Elements().Where(x => x.Name == "Language");
             q.Should().HaveCount(2);
         }
+
+        [TestMethod]
+        public void GetElementUnderRoot()
+        {
+            var d = XDocument.Load(this.GetStream());
+
+            d.Root.Elements().Should().NotBeEmpty().And.HaveCount(5);
+
+            var ip = d.Root.Elements().First(x => x.Name == "IP");
+
+            Console.WriteLine(ip);
+            Console.WriteLine(ip.Name);
+
+            ip.Should().NotBeNull();
+            ip.Name.ToString().Should().Be("IP");
+        }
     }
 }
