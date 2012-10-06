@@ -95,6 +95,8 @@
       <HintPath>..\packages\AutoFixture.2.12.0\lib\Ploeh.SemanticComparison.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Reactive.Core">
       <HintPath>..\packages\Rx-Core.2.0.20823\lib\Net45\System.Reactive.Core.dll</HintPath>
     </Reference>
@@ -124,12 +126,22 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Data\DataRepositoryDummy.cs" />
+    <Compile Include="Data\Pubs.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pubs.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Model\Country.cs" />
     <Compile Include="Model\Language.cs" />
     <Compile Include="Model\LinkedListCustomItem.cs" />
     <Compile Include="Model\Person.cs" />
     <Compile Include="Model\Pet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Topics\CustomEvents\CustomEventsTests.cs" />
     <Compile Include="Topics\CustomEvents\MyEventConsumer.cs" />
     <Compile Include="Topics\CustomEvents\MyEventRaiser.cs" />
@@ -138,6 +150,7 @@
     <Compile Include="Topics\LinqToObjects\FilterACollectionExcludingTheValuesFromAnotherCollectionTests.cs" />
     <Compile Include="Topics\LinqToObjects\GroupByTests.cs" />
     <Compile Include="Topics\LinqToObjects\GroupJoinTests.cs" />
+    <Compile Include="Topics\LinqToObjects\InnerJoinsTests.cs" />
     <Compile Include="Topics\LinqToObjects\SelectManyTests.cs" />
     <Compile Include="Topics\LinqToXml\ReadingDataFromXmlFilesTests.cs" />
     <Compile Include="Topics\ReactiveProgramming\SubscribingToASimpleDataSourceTests.cs" />
@@ -145,14 +158,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Data\Pubs.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Pubs.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\Pubs.dbml.layout">
+      <DependentUpon>Pubs.dbml</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\People.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

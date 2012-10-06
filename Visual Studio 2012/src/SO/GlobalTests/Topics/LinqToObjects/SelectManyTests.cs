@@ -29,5 +29,52 @@ namespace GlobalTests.Topics.LinqToObjects
             var q1 = pets.SelectMany(x => people, (pet, person) => new { Pet = pet, Person = person });
             q1.Should().HaveCount(24);
         }
+
+        [TestMethod]
+        public void testing_select_many_with_linq_to_sql_objects()
+        {
+            var ctx = new PubsDataContext();
+
+            var q = from e in ctx.employee
+                    from j in ctx.jobs
+                    orderby e.fname, e.lname, j.job_desc
+                    select new
+                    {
+                        Employee = e,
+                        Job = j
+                    };
+
+            Console.WriteLine(q);
+            q.Should().NotBeNull().And.NotBeEmpty();
+            foreach (var item in q)
+            {
+                Console.WriteLine(
+                    string.Format(
+                    "Employee: {0} - Job: {1}",
+                    item.Employee.fname + " " + item.Employee.lname,
+                    item.Job.job_desc
+                    ));
+            }
+
+            var r = ctx.employee.OrderBy(x => x.fname).ThenBy(x => x.lname).SelectMany(
+                x => ctx.jobs.OrderBy(c => c.job_desc),
+                (x, y) => new
+                {
+                    Employee = x,
+                    Job = y
+                });
+
+            Console.WriteLine(r);
+            r.Should().NotBeNull().And.NotBeEmpty();
+            foreach (var item in r)
+            {
+                Console.WriteLine(
+                    string.Format(
+                    "Employee: {0} - Job: {1}",
+                    item.Employee.fname + " " + item.Employee.lname,
+                    item.Job.job_desc
+                    ));
+            }
+        }
     }
 }

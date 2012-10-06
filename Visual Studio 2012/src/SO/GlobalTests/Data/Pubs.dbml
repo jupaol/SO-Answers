@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="pubs" Class="PubsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=pubs;Integrated Security=True" SettingsObjectName="GlobalTests.Properties.Settings" SettingsPropertyName="pubsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.employee" Member="employee">
+    <Type Name="employee">
+      <Column Name="emp_id" Type="System.String" DbType="Char(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="minit" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="lname" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="job_id" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="job_lvl" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="pub_id" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="hire_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="jobs_employee" Member="jobs" ThisKey="job_id" OtherKey="job_id" Type="jobs" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.jobs" Member="jobs">
+    <Type Name="jobs">
+      <Column Name="job_id" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="job_desc" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="min_lvl" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="max_lvl" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="jobs_employee" Member="employee" ThisKey="job_id" OtherKey="job_id" Type="employee" />
+    </Type>
+  </Table>
+</Database>
