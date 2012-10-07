@@ -340,6 +340,7 @@
     <Content Include="Topics\HttpHandlers\Blog\Posts.aspx" />
     <Content Include="Topics\JQuery\Ajax\ConsumeAWebServiceUsingAjax.aspx" />
     <Content Include="Topics\JQuery\Ajax\PageMethods_JQueryAJAX.aspx" />
+    <Content Include="Topics\JQuery\Ajax\RemoveRowUsingJQueryAfterCallingService.aspx" />
     <Content Include="Topics\JQuery\Ajax\TestWcfServiceFromAjax.aspx" />
     <Content Include="Topics\JQuery\Ajax\TestWcfServiceFromAjax.svc" />
     <Content Include="Topics\JQuery\Ajax\TestWebService.asmx" />
@@ -698,6 +699,13 @@
     </Compile>
     <Compile Include="Topics\JQuery\Ajax\PageMethods_JQueryAJAX.aspx.designer.cs">
       <DependentUpon>PageMethods_JQueryAJAX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\JQuery\Ajax\RemoveRowUsingJQueryAfterCallingService.aspx.cs">
+      <DependentUpon>RemoveRowUsingJQueryAfterCallingService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\JQuery\Ajax\RemoveRowUsingJQueryAfterCallingService.aspx.designer.cs">
+      <DependentUpon>RemoveRowUsingJQueryAfterCallingService.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\JQuery\Ajax\TestWcfServiceFromAjax.aspx.cs">
       <DependentUpon>TestWcfServiceFromAjax.aspx</DependentUpon>
