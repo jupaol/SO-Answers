@@ -319,6 +319,7 @@
     <Content Include="Topics\ControlState\ControlStateTesting.aspx" />
     <Content Include="Topics\DataBinding\ForDropDownList\LinkingTwoDropDownLists.aspx" />
     <Content Include="Topics\DataBinding\ForFormView\FormViewPagerBug.aspx" />
+    <Content Include="Topics\DataBinding\ForListView\BindingControlInsideTemplate.aspx" />
     <Content Include="Topics\DynamicControls\AddingDynamicControlsOnDemand.aspx" />
     <Content Include="Topics\DynamicControls\AddingDynamicUserControl.aspx" />
     <Content Include="Topics\DynamicControls\AddingDynamicUserControlsOnDemand.aspx" />
@@ -547,6 +548,13 @@
     </Compile>
     <Compile Include="Topics\DataBinding\ForFormView\FormViewPagerBug.aspx.designer.cs">
       <DependentUpon>FormViewPagerBug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topics\DataBinding\ForListView\BindingControlInsideTemplate.aspx.cs">
+      <DependentUpon>BindingControlInsideTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics\DataBinding\ForListView\BindingControlInsideTemplate.aspx.designer.cs">
+      <DependentUpon>BindingControlInsideTemplate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Topics\DynamicControls\AddingDynamicControlsOnDemand.aspx.cs">
       <DependentUpon>AddingDynamicControlsOnDemand.aspx</DependentUpon>
